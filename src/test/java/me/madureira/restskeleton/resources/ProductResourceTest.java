@@ -9,12 +9,9 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
-import java.util.Arrays;
-
 import javax.ws.rs.core.Response;
 
 import me.madureira.restskeleton.models.Product;
-import me.madureira.restskeleton.resources.ProductResource;
 import me.madureira.restskeleton.services.ProductService;
 
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;

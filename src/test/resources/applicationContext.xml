@@ -9,6 +9,5 @@
 
 	<context:annotation-config />
 	<context:component-scan base-package="me.madureira.restskeleton" />
-	<bean id="productResource" class="me.madureira.restskeleton.resources.ProductResource" />
 
 </beans>
