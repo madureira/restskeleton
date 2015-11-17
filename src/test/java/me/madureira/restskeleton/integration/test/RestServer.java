@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.integration;
+package me.madureira.restskeleton.integration.test;
 
 import org.jboss.resteasy.plugins.server.tjws.TJWSEmbeddedJaxrsServer;
 
@@ -9,7 +9,7 @@ import org.jboss.resteasy.plugins.server.tjws.TJWSEmbeddedJaxrsServer;
  * @author madureira
  *
  */
-public class IntegrationTestUtil {
+public class RestServer {
 
 	private static int PORT = 8000;
 	private static final String DOMAIN = "http://localhost";
@@ -21,19 +21,19 @@ public class IntegrationTestUtil {
 		server.getDeployment().getResources().add(resource);
 	}
 
-	public static void serverStart() {
+	public static void start() {
 		server.start();
 	}
 
-	public static void serverClose() {
+	public static void close() {
 		if (server != null) {
 			server.stop();
 			server = null;
 		}
 	}
 
-	public static String endPoint(String path) {
-		return DOMAIN + ":" + PORT + "/" + path;
+	public static String getUrl() {
+		return DOMAIN + ":" + PORT;
 	}
 
 }
