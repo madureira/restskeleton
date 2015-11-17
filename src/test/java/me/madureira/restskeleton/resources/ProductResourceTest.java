@@ -8,6 +8,7 @@ import static org.mockito.Mockito.verify;
 
 import javax.ws.rs.core.Response;
 
+import me.madureira.restskeleton.integration.test.JsonUtils;
 import me.madureira.restskeleton.integration.test.RestClient;
 import me.madureira.restskeleton.integration.test.RestServer;
 import me.madureira.restskeleton.models.Product;
@@ -19,8 +20,6 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import com.google.gson.Gson;
 
 /**
  * Unit test coverage to {@link ProductResource}
@@ -67,9 +66,9 @@ public class ProductResourceTest {
 		String uri = RestServer.getUrl() + "/product/123";
 
 		Response response = RestClient.at(uri).get();
-		String json = getJsonFromResponse(response);
+		String json = JsonUtils.getJsonFrom(response);
 
-		Product responseProduct = convertJsonToProduct(json);
+		Product responseProduct = JsonUtils.convert(json).to(Product.class);
 
 		assertThat(responseProduct.getName(), is("Some product"));
 	}
@@ -81,15 +80,6 @@ public class ProductResourceTest {
 		product.setDescription("This is a simple product for the example");
 		product.setKeywords(asList("test", "rest", "service"));
 		return product;
-	}
-
-	private static String getJsonFromResponse(Response response) {
-		return response.readEntity(String.class);
-	}
-
-	private static Product convertJsonToProduct(String json) {
-		Gson gson = new Gson();
-		return gson.fromJson(json, Product.class);
 	}
 
 }
