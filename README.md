@@ -1,5 +1,5 @@
 # Restskeleton
-Restskeleton is a small Rest application written in Java and using [RestEasy 3](http://resteasy.jboss.org/) + [Spring 3](http://spring.io/) + [Maven 3](https://maven.apache.org/).
+Restskeleton is a small Rest web-service written in Java and using [RestEasy 3](http://resteasy.jboss.org/) + [Spring 3](http://spring.io/) + [Maven 3](https://maven.apache.org/).
 
 The RestEasy is used to create the web resources, Spring to inject and manages the dependencies and [Gson](https://github.com/google/gson) is used to convert object into JSON.
 
