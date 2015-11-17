@@ -14,7 +14,7 @@ The ResponeBody is a valid JSON object with Content-type: application/json.
 * **Maven** 3
 * **Servlet-api** 3.x
 
-## Library versions
+## Versions of libraries
 * **RestEasy** 3.0.x
 * **Spring** 3.2.x
 * **Gson** 2.4
