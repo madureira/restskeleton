@@ -7,8 +7,8 @@
         http://www.springframework.org/schema/context 
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<context:component-scan base-package="me.madureira.restskeleton" /><context:annotation-config />
-
-	<bean class="org.jboss.resteasy.plugins.spring.SpringBeanProcessorServletAware"/>
+	<context:annotation-config />
+	<context:component-scan base-package="me.madureira.restskeleton" />
+	<bean id="productResource" class="me.madureira.restskeleton.resources.ProductResource" />
 
 </beans>
