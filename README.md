@@ -5,6 +5,8 @@ The RestEasy is used to create the web resources, Spring to inject and manages t
 
 You can use it to prototype your Rest API or in production, why not? ;)
 
+The ResponeBody is a valid JSON object with Content-type: application/json.
+
 (*This project uses an embedded version of Jetty.*)
 
 ## Dependencies
