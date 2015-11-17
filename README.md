@@ -38,7 +38,7 @@ To see the results of the rest services, you can access:
 [http://localhost:8080/rest/product](http://localhost:8080/rest/product)
 ```json
 {
-  "success": "It's working :)"
+  "success": "Endpoint of product works"
 }
 ```
 

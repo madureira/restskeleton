@@ -27,7 +27,9 @@ public class ProductResource {
 	@GET
 	@Path("/")
 	public Response index() {
-		return status(200).entity(new SuccessMessage("It's working :)")).build();
+		SuccessMessage message = new SuccessMessage("Endpoint of product works");
+
+		return status(200).entity(message).build();
 	}
 
 	@GET
