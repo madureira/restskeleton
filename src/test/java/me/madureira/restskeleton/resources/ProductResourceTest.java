@@ -31,37 +31,37 @@ import org.mockito.runners.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class ProductResourceTest {
 
-    @Mock
-    private static ProductService service;
+	@Mock
+	private static ProductService service;
 
-    @InjectMocks
-    private static ProductResource resource;
+	@InjectMocks
+	private static ProductResource resource;
 
-    @BeforeClass
-    public static void setUpClass() {
-        resource = new ProductResource();
-        createServer(resource);
-        serverStart();
-    }
+	@BeforeClass
+	public static void setUpClass() {
+		resource = new ProductResource();
+		createServer(resource);
+		serverStart();
+	}
 
-    @Test
-    public void shouldGetTheProductById() {
-        Product product = new Product();
-        product.setId(123);
-        product.setName("Some product");
-        product.setDescription("This is a simple product for the example");
-        product.setKeywords(asList("test", "rest", "service"));
+	@Test
+	public void shouldGetTheProductById() {
+		Product product = new Product();
+		product.setId(123);
+		product.setName("Some product");
+		product.setDescription("This is a simple product for the example");
+		product.setKeywords(asList("test", "rest", "service"));
 
-        given(service.getById(123)).willReturn(product);
+		given(service.getById(123)).willReturn(product);
 
-        Response response = getOn(endPoint("product/123"));
+		Response response = getOn(endPoint("product/123"));
 
-        assertThat(response.getStatus(), is(200));
-        verify(service).getById(123);
-    }
+		assertThat(response.getStatus(), is(200));
+		verify(service).getById(123);
+	}
 
-    private Response getOn(String uri) {
-        return new ResteasyClientBuilder().build().target(uri).request().get();
-    }
+	private Response getOn(String uri) {
+		return new ResteasyClientBuilder().build().target(uri).request().get();
+	}
 
 }
