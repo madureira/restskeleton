@@ -73,4 +73,13 @@ src/main/java/me/madureira/restskeleton/resources/
 src/test/java/me/madureira/restskeleton/resources/ProductResourceTest.java
 ```
 
-I hope you enjoy :)
+## Eclipse
+If you use Eclipse to develop, you can import this application as an *"Existing Maven Projects"*.
+
+1. Right click on Package Explorer
+1. Import...
+1. Existing Maven Projects
+1. Select the project folder
+1. Click on Finish button
+
+**I hope you enjoy :)**
