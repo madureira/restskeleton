@@ -16,7 +16,6 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.example.restskeleton.models.Product;
-import com.example.restskeleton.resources.ProductResource;
 import com.example.restskeleton.services.ProductService;
 import com.example.restskeleton.utils.test.JsonUtils;
 import com.example.restskeleton.utils.test.RestClient;
@@ -67,6 +66,7 @@ public class ProductResourceTest {
 		String uri = RestServer.getUrl() + "/product/123";
 
 		Response response = RestClient.at(uri).get();
+
 		String json = JsonUtils.getJsonFrom(response);
 
 		Product responseProduct = JsonUtils.convert(json).to(Product.class);
