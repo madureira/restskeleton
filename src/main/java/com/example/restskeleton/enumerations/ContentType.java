@@ -8,6 +8,6 @@ package com.example.restskeleton.enumerations;
  */
 public class ContentType {
 
-	public static final String APPLICATION_JSON = "application/json; charset=utf-8";
+	public static final String APPLICATION_JSON = "application/json;charset=utf-8";
 
 }
