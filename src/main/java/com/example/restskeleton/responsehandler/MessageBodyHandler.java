@@ -1,6 +1,6 @@
-package me.madureira.restskeleton.responsehandler;
+package com.example.restskeleton.responsehandler;
 
-import static me.madureira.restskeleton.enumerations.ContentType.APPLICATION_JSON;
+import static com.example.restskeleton.enumerations.ContentType.APPLICATION_JSON;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.models;
+package com.example.restskeleton.models;
 
 import com.google.gson.annotations.SerializedName;
 

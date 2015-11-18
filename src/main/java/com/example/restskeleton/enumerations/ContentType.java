@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.enumerations;
+package com.example.restskeleton.enumerations;
 
 /**
  * Represents all content-types used by the application.

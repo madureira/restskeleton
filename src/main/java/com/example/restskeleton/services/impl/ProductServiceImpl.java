@@ -1,10 +1,11 @@
-package me.madureira.restskeleton.services.impl;
+package com.example.restskeleton.services.impl;
 
 import static java.util.Arrays.asList;
-import me.madureira.restskeleton.models.Product;
-import me.madureira.restskeleton.services.ProductService;
 
 import org.springframework.stereotype.Component;
+
+import com.example.restskeleton.models.Product;
+import com.example.restskeleton.services.ProductService;
 
 /**
  * {@inheritDoc}

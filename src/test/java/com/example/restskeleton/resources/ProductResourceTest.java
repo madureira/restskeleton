@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.resources;
+package com.example.restskeleton.resources;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.Matchers.is;
@@ -8,18 +8,19 @@ import static org.mockito.Mockito.verify;
 
 import javax.ws.rs.core.Response;
 
-import me.madureira.restskeleton.integration.test.JsonUtils;
-import me.madureira.restskeleton.integration.test.RestClient;
-import me.madureira.restskeleton.integration.test.RestServer;
-import me.madureira.restskeleton.models.Product;
-import me.madureira.restskeleton.services.ProductService;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import com.example.restskeleton.integration.test.JsonUtils;
+import com.example.restskeleton.integration.test.RestClient;
+import com.example.restskeleton.integration.test.RestServer;
+import com.example.restskeleton.models.Product;
+import com.example.restskeleton.resources.ProductResource;
+import com.example.restskeleton.services.ProductService;
 
 /**
  * Unit test coverage to {@link ProductResource}

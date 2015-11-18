@@ -65,12 +65,12 @@ To see the results of the rest services, you can access:
 ## Where can I edit this resource?
 You can change or add a new Resource inside the package:
 ```
-src/main/java/me/madureira/restskeleton/resources/
+src/main/java/com/example/restskeleton/resources/
 ```
 
 ## The unit test for this resource are in:
 ```
-src/test/java/me/madureira/restskeleton/resources/ProductResourceTest.java
+src/test/java/com/example/restskeleton/resources/ProductResourceTest.java
 ```
 
 ## Eclipse

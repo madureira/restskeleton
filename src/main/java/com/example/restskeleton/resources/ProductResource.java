@@ -1,7 +1,7 @@
-package me.madureira.restskeleton.resources;
+package com.example.restskeleton.resources;
 
+import static com.example.restskeleton.enumerations.ContentType.APPLICATION_JSON;
 import static javax.ws.rs.core.Response.status;
-import static me.madureira.restskeleton.enumerations.ContentType.APPLICATION_JSON;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -9,12 +9,12 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import me.madureira.restskeleton.models.Product;
-import me.madureira.restskeleton.models.SuccessMessage;
-import me.madureira.restskeleton.services.ProductService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.example.restskeleton.models.Product;
+import com.example.restskeleton.models.SuccessMessage;
+import com.example.restskeleton.services.ProductService;
 
 @Component
 @Path("/product")

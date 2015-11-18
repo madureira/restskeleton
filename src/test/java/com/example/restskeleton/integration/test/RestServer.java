@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.integration.test;
+package com.example.restskeleton.integration.test;
 
 import org.jboss.resteasy.plugins.server.tjws.TJWSEmbeddedJaxrsServer;
 

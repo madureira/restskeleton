@@ -1,6 +1,6 @@
-package me.madureira.restskeleton.services;
+package com.example.restskeleton.services;
 
-import me.madureira.restskeleton.models.Product;
+import com.example.restskeleton.models.Product;
 
 /**
  * Responsible to retrieve the informations about the product.

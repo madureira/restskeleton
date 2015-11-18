@@ -1,4 +1,4 @@
-package me.madureira.restskeleton.models;
+package com.example.restskeleton.models;
 
 import java.util.List;
 
