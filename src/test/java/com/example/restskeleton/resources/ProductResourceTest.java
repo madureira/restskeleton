@@ -15,12 +15,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.example.restskeleton.integration.test.JsonUtils;
-import com.example.restskeleton.integration.test.RestClient;
-import com.example.restskeleton.integration.test.RestServer;
 import com.example.restskeleton.models.Product;
 import com.example.restskeleton.resources.ProductResource;
 import com.example.restskeleton.services.ProductService;
+import com.example.restskeleton.utils.test.JsonUtils;
+import com.example.restskeleton.utils.test.RestClient;
+import com.example.restskeleton.utils.test.RestServer;
 
 /**
  * Unit test coverage to {@link ProductResource}
